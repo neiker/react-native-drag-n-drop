@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNDragNDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNDragNDrop.m */; };
-		CAAC020B1F705AED00B18949 /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAC020A1F705AED00B18949 /* TargetView.swift */; };
-		CAAC020D1F705BE200B18949 /* RNDragNDropTargetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAC020C1F705BE200B18949 /* RNDragNDropTargetManager.swift */; };
+		CA0FF2041F7F03E70062BCCA /* RNDropTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0FF2031F7F03E70062BCCA /* RNDropTargetView.swift */; };
+		CA0FF2061F7F04220062BCCA /* RNDropTargetViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0FF2051F7F04220062BCCA /* RNDropTargetViewManager.swift */; };
+		CA0FF2081F7F04460062BCCA /* RNDropTargetViewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0FF2071F7F04460062BCCA /* RNDropTargetViewModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		58B511D91A9E6C8500147676 /* CopyFiles */ = {
+		CA0FF1D71F7F03A40062BCCA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -25,15 +25,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libRNDragNDrop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNDragNDrop.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5891CC2AC0600A0062D /* RNDragNDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDragNDrop.m; sourceTree = "<group>"; };
-		CAAC02091F705AEC00B18949 /* RNDragNDrop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNDragNDrop-Bridging-Header.h"; sourceTree = "<group>"; };
-		CAAC020A1F705AED00B18949 /* TargetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
-		CAAC020C1F705BE200B18949 /* RNDragNDropTargetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNDragNDropTargetManager.swift; sourceTree = "<group>"; };
+		CA0FF1D91F7F03A40062BCCA /* libRNDragNDrop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNDragNDrop.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0FF2021F7F03E60062BCCA /* RNDragNDrop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNDragNDrop-Bridging-Header.h"; sourceTree = "<group>"; };
+		CA0FF2031F7F03E70062BCCA /* RNDropTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNDropTargetView.swift; sourceTree = "<group>"; };
+		CA0FF2051F7F04220062BCCA /* RNDropTargetViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNDropTargetViewManager.swift; sourceTree = "<group>"; };
+		CA0FF2071F7F04460062BCCA /* RNDropTargetViewModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNDropTargetViewModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		58B511D81A9E6C8500147676 /* Frameworks */ = {
+		CA0FF1D61F7F03A40062BCCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,114 +43,135 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		134814211AA4EA7D00B7C361 /* Products */ = {
+		CA0FF1D01F7F03A40062BCCA = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libRNDragNDrop.a */,
+				CA0FF1DB1F7F03A40062BCCA /* RNDragNDrop */,
+				CA0FF1DA1F7F03A40062BCCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA0FF1DA1F7F03A40062BCCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA0FF1D91F7F03A40062BCCA /* libRNDragNDrop.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		58B511D21A9E6C8500147676 = {
+		CA0FF1DB1F7F03A40062BCCA /* RNDragNDrop */ = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5891CC2AC0600A0062D /* RNDragNDrop.m */,
-				CAAC020C1F705BE200B18949 /* RNDragNDropTargetManager.swift */,
-				CAAC020A1F705AED00B18949 /* TargetView.swift */,
-				134814211AA4EA7D00B7C361 /* Products */,
-				CAAC02091F705AEC00B18949 /* RNDragNDrop-Bridging-Header.h */,
+				CA0FF2031F7F03E70062BCCA /* RNDropTargetView.swift */,
+				CA0FF2021F7F03E60062BCCA /* RNDragNDrop-Bridging-Header.h */,
+				CA0FF2051F7F04220062BCCA /* RNDropTargetViewManager.swift */,
+				CA0FF2071F7F04460062BCCA /* RNDropTargetViewModule.m */,
 			);
+			path = RNDragNDrop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* RNDragNDrop */ = {
+		CA0FF1D81F7F03A40062BCCA /* RNDragNDrop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNDragNDrop" */;
+			buildConfigurationList = CA0FF1E21F7F03A40062BCCA /* Build configuration list for PBXNativeTarget "RNDragNDrop" */;
 			buildPhases = (
-				58B511D71A9E6C8500147676 /* Sources */,
-				58B511D81A9E6C8500147676 /* Frameworks */,
-				58B511D91A9E6C8500147676 /* CopyFiles */,
+				CA0FF1D51F7F03A40062BCCA /* Sources */,
+				CA0FF1D61F7F03A40062BCCA /* Frameworks */,
+				CA0FF1D71F7F03A40062BCCA /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = RNDragNDrop;
-			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libRNDragNDrop.a */;
+			productName = RNDragNDrop;
+			productReference = CA0FF1D91F7F03A40062BCCA /* libRNDragNDrop.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		58B511D31A9E6C8500147676 /* Project object */ = {
+		CA0FF1D11F7F03A40062BCCA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = neiker;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Javier Alvarez";
 				TargetAttributes = {
-					58B511DA1A9E6C8500147676 = {
-						CreatedOnToolsVersion = 6.1.1;
-						LastSwiftMigration = 0830;
+					CA0FF1D81F7F03A40062BCCA = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNDragNDrop" */;
+			buildConfigurationList = CA0FF1D41F7F03A40062BCCA /* Build configuration list for PBXProject "RNDragNDrop" */;
 			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 58B511D21A9E6C8500147676;
-			productRefGroup = 58B511D21A9E6C8500147676;
+			mainGroup = CA0FF1D01F7F03A40062BCCA;
+			productRefGroup = CA0FF1DA1F7F03A40062BCCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* RNDragNDrop */,
+				CA0FF1D81F7F03A40062BCCA /* RNDragNDrop */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		58B511D71A9E6C8500147676 /* Sources */ = {
+		CA0FF1D51F7F03A40062BCCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAAC020B1F705AED00B18949 /* TargetView.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* RNDragNDrop.m in Sources */,
-				CAAC020D1F705BE200B18949 /* RNDragNDropTargetManager.swift in Sources */,
+				CA0FF2081F7F04460062BCCA /* RNDropTargetViewModule.m in Sources */,
+				CA0FF2041F7F03E70062BCCA /* RNDropTargetView.swift in Sources */,
+				CA0FF2061F7F04220062BCCA /* RNDropTargetViewManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		58B511ED1A9E6C8500147676 /* Debug */ = {
+		CA0FF1E01F7F03A40062BCCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -158,43 +179,54 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		58B511EE1A9E6C8500147676 /* Release */ = {
+		CA0FF1E11F7F03A40062BCCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -202,76 +234,68 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		58B511F01A9E6C8500147676 /* Debug */ = {
+		CA0FF1E31F7F03A40062BCCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66J33P54LR;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNDragNDrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "RNDragNDrop-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "RNDragNDrop/RNDragNDrop-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		58B511F11A9E6C8500147676 /* Release */ = {
+		CA0FF1E41F7F03A40062BCCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66J33P54LR;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNDragNDrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "RNDragNDrop-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "RNDragNDrop/RNDragNDrop-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNDragNDrop" */ = {
+		CA0FF1D41F7F03A40062BCCA /* Build configuration list for PBXProject "RNDragNDrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58B511ED1A9E6C8500147676 /* Debug */,
-				58B511EE1A9E6C8500147676 /* Release */,
+				CA0FF1E01F7F03A40062BCCA /* Debug */,
+				CA0FF1E11F7F03A40062BCCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNDragNDrop" */ = {
+		CA0FF1E21F7F03A40062BCCA /* Build configuration list for PBXNativeTarget "RNDragNDrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58B511F01A9E6C8500147676 /* Debug */,
-				58B511F11A9E6C8500147676 /* Release */,
+				CA0FF1E31F7F03A40062BCCA /* Debug */,
+				CA0FF1E41F7F03A40062BCCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
+	rootObject = CA0FF1D11F7F03A40062BCCA /* Project object */;
 }

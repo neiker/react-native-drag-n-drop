@@ -24,4 +24,4 @@ DropTarget.propTypes = {
 };
 
 
-const RNDragNDropTargetView = Platform.OS === 'ios' ? requireNativeComponent('RNDragNDropTargetView', DropTarget) : View;
+const RNDragNDropTargetView = Platform.OS === 'ios' ? requireNativeComponent('RNDropTargetView', DropTarget) : View;

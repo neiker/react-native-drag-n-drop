@@ -1,8 +1,9 @@
 //
-//  RNDragNDropTargetView.swift
+//  RNDropTargetView.swift
 //  RNDragNDrop
 //
-//  Created by Javier Alvarez on 19/07/17.
+//  Created by Javier Alvarez on 19/07/2017.
+//  Copyright © 2017 Javier Alvarez. All rights reserved.
 //
 
 import MobileCoreServices
@@ -23,8 +24,8 @@ func getFileExtension(for itemProvider: NSItemProvider, default defaultValue: St
     return uttypeToExtensionMap[itemProvider.registeredTypeIdentifiers[0]] ?? ""
 }
 
-@objc(RNDragNDropTargetView)
-class RNDragNDropTargetView: UIView, UIDropInteractionDelegate {
+@objc(RNDropTargetView)
+class RNDropTargetView: UIView, UIDropInteractionDelegate {
     private var _imageTypes = [
         kUTTypeJPEG as String,
         kUTTypePNG as String,
@@ -165,10 +166,11 @@ class RNDragNDropTargetView: UIView, UIDropInteractionDelegate {
         self._onWillDrop?(["point":[ "x": dropPoint.x, "y": dropPoint.y]])
         
         if(session.hasItemsConforming(toTypeIdentifiers: self._imageTypes)) {
+            // If we only use the last case, images from browser will be handle as URL
             self.loadAsFiles(session, dropPoint, kUTTypeItem)
         } else if(session.hasItemsConforming(toTypeIdentifiers: self._textTypes)) {
             self.loadAsString(session, dropPoint)
-        } else if(session.hasItemsConforming(toTypeIdentifiers: self._urlTypes)) {
+        }else if(session.hasItemsConforming(toTypeIdentifiers: self._urlTypes)) {
             self.loadAsURL(session, dropPoint)
         } else if(session.hasItemsConforming(toTypeIdentifiers: [kUTTypeItem as String])) {
             self.loadAsFiles(session, dropPoint, kUTTypeItem)
@@ -290,4 +292,5 @@ class RNDragNDropTargetView: UIView, UIDropInteractionDelegate {
         }
     }
 }
+
 
