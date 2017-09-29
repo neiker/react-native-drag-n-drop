@@ -1,5 +1,9 @@
 import React, { PropTypes } from 'react';
-import { requireNativeComponent } from 'react-native';
+import { 
+  Platform,
+  requireNativeComponent,
+  View,
+} from 'react-native';
 
 export function DropTarget(props) {
   return (
@@ -19,4 +23,5 @@ DropTarget.propTypes = {
   onDrop: PropTypes.func,
 };
 
-const RNDragNDropTargetView = requireNativeComponent('RNDragNDropTargetView', DropTarget);
+
+const RNDragNDropTargetView = Platform.OS === 'ios' ? requireNativeComponent('RNDragNDropTargetView', DropTarget) : View;

@@ -164,7 +164,9 @@ class RNDragNDropTargetView: UIView, UIDropInteractionDelegate {
         
         self._onWillDrop?(["point":[ "x": dropPoint.x, "y": dropPoint.y]])
         
-        if(session.hasItemsConforming(toTypeIdentifiers: self._textTypes)) {
+        if(session.hasItemsConforming(toTypeIdentifiers: self._imageTypes)) {
+            self.loadAsFiles(session, dropPoint, kUTTypeItem)
+        } else if(session.hasItemsConforming(toTypeIdentifiers: self._textTypes)) {
             self.loadAsString(session, dropPoint)
         } else if(session.hasItemsConforming(toTypeIdentifiers: self._urlTypes)) {
             self.loadAsURL(session, dropPoint)
