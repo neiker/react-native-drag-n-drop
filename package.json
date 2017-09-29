@@ -1,0 +1,18 @@
+
+{
+  "name": "react-native-drag-n-drop",
+  "version": "1.0.0",
+  "description": "React native wrapper to the iOS 11 Drag and Drop API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Javier Alvarez <neiker@gmail.com>",
+  "license": "",
+  "peerDependencies": {
+    "react-native": "0.45.1"
+  }
+}
