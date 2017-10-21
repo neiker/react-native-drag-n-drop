@@ -1,6 +1,12 @@
 
 # react-native-drag-n-drop
 
+## Read first
+IMPORTANT: I had to unpublish this package from npm because can't figure out how to make work the swift code as a library with react-native manager. If you want to help, take a look here:
+https://github.com/neiker/react-native-drag-n-drop/blob/master/ios/RNDragNDrop/RNDropTargetViewModule.m
+Anyway, it works if you copy and paste the files on xcode within the main project.
+
+
 You can see it in action on the [mural iOS app](https://itunes.apple.com/us/app/mural-visual-collaboration/id1156631145?mt=8) and on this video:
 
 <a href="http://embed.vidyard.com/share/1uf7n97aPdiXhyVc9HSW9r" target="_blank">
