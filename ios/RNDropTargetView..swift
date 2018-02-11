@@ -3,10 +3,10 @@
 //  RNDragNDrop
 //
 //  Created by Javier Alvarez on 19/07/2017.
-//  Copyright © 2017 Javier Alvarez. All rights reserved.
 //
 
 import MobileCoreServices
+import UIKit
 
 let uttypeToExtensionMap = [
     kUTTypeJPEG as String: "jpg",
@@ -21,11 +21,13 @@ func getFileExtension(for itemProvider: NSItemProvider, default defaultValue: St
         return defaultValue!;
     }
     
-    return uttypeToExtensionMap[itemProvider.registeredTypeIdentifiers[0]] ?? ""
+    if let key = itemProvider.registeredTypeIdentifiers.first as? String {
+        return uttypeToExtensionMap[key] ?? ""
+    }
+    return ""
 }
 
-@objc(RNDropTargetView)
-class RNDropTargetView: UIView, UIDropInteractionDelegate {
+@objc public class RNDropTargetView: UIView, UIDropInteractionDelegate {
     private var _imageTypes = [
         kUTTypeJPEG as String,
         kUTTypePNG as String,
